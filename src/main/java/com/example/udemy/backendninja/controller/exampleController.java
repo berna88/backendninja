@@ -18,12 +18,16 @@ public class exampleController {
 	@GetMapping("exampleString")
 	public String exampleString(Model model){
 		model.addAttribute("name", "Bernardo");
+		model.addAttribute("apellidos", "Hernández Ramírez");
 		return EXAMPLE_VIEW;
 	}
 	// segunda forma de obtener la vista
 	@GetMapping("exampleMAV")
 	public ModelAndView exampleMAV(){
-		return new ModelAndView(EXAMPLE_VIEW);
+		ModelAndView model = new ModelAndView(EXAMPLE_VIEW);
+		model.addObject("name", "Carla");
+		model.addObject("apellidos", "Molina Soto");
+		return model;
 	}
 
 }
