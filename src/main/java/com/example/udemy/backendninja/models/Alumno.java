@@ -39,6 +39,13 @@ public class Alumno {
 		this.age = age;
 		this.id = id;
 	}
+
+	@Override
+	public String toString() {
+		return "Alumno [name=" + name + ", age=" + age + ", id=" + id + "]";
+	}
+	
+	
 	
 	
 }
