@@ -5,11 +5,11 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Component;
 
 @Component("exampleComponent")
-public class ExampleController {
+public class ExampleComponent {
 	
-	private static final Log LOG = LogFactory.getLog(ExampleController.class);
-
+	private static final Log LOG = LogFactory.getLog(ExampleComponent.class);
+	
 	public void sayHello(){
-		LOG.info("Hi From Componente");
+		LOG.info("Hi From Componente berni");
 	}
 }
